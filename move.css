@@ -1,0 +1,23 @@
+img[src="cw_image07.png"],
+#spotlight img[src="cw_image01.png"] {
+   display: inline-block;
+   transform-origin: center center;
+   animation: spin 4s linear infinite;
+}
+
+/* Pause animation on mouse hover */
+img[src="cw_image07.png"].paused,
+#spotlight img[src="cw_image01.png"].paused {
+   animation-play-state: paused;
+}
+
+/* Continuous rotation */
+@keyframes spin {
+   from {
+      transform: rotate(0deg);
+   }
+
+   to {
+      transform: rotate(360deg);
+   }
+}
